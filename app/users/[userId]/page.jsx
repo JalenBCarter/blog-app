@@ -5,21 +5,21 @@ import { Suspense } from 'react'
 import UserPosts from './components/UserPosts'
 import { notFound } from 'next/navigation'
 
-export async function GenerateMetadata({ params: { userId } }) {
-    const userData = getUser(userId)
-    const user = await userData
+// export async function GenerateMetadata({ params: { userId } }) {
+//     const userData = getUser(userId)
+//     const user = await userData
 
-    if (!user.name) {
-        return {
-            title: 'User not found',
-        }
-    }
+//     if (!user.name) {
+//         return {
+//             title: 'User not found',
+//         }
+//     }
 
-    return {
-        title: user.name,
-        description: `this is the page of ${user.name}`,
-    }
-}
+//     return {
+//         title: user.name,
+//         description: `this is the page of ${user.name}`,
+//     }
+// }
 
 export default async function UserPage({ params: { userId } }) {
     const userData = getUser(userId)
