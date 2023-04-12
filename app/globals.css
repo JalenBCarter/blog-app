@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    background-color: azure;
+}
+
+h1 {
+    font-size: large;
+}
